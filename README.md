@@ -1,2 +1,22 @@
-# resnet18-transfer-learning-cats-vs-dogs
-Transfer learning based image classification using PyTorch and ResNet18. Implemented feature extraction with a frozen backbone and fine-tuning of the final residual block. Tracked training vs validation accuracy to analyze convergence and generalization on a real-world Cats vs Dogs dataset.
+# Cats vs Dogs Classification using Transfer Learning (ResNet18)
+
+## Overview
+Applied transfer learning using a pretrained ResNet18 model for binary image classification.
+
+## Approach
+- Used ImageNet-pretrained ResNet18
+- Feature extraction (frozen backbone)
+- Fine-tuned last residual block (layer4) with lower learning rate
+- Monitored training vs validation accuracy to avoid overfitting
+
+## Results
+- Feature extraction accuracy: ~98%
+- Fine-tuned accuracy: 100% (on validation set)
+
+## Training Curves
+[accuracy_plot.png]
+
+## Key Learnings
+- Importance of freezing/unfreezing layers
+- Effect of learning rate during fine-tuning
+- Early stopping based on validation metrics
