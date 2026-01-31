@@ -1,4 +1,14 @@
-# Cats vs Dogs Classification using Transfer Learning (ResNet18)
+## Experiments
+
+### 1. Cats vs Dogs (Binary Classification)
+- Feature extraction + fine-tuning
+- Achieved ~100% validation accuracy
+- Very fast convergence due to ImageNet features
+
+### 2. Flowers Dataset (14-Class Classification)
+- Fine-tuned last ResNet block
+- Best validation accuracy ~98%
+- Early stopping due to overfitting risk
 
 ## Overview
 Applied transfer learning using a pretrained ResNet18 model for binary image classification.
